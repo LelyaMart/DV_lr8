@@ -135,7 +135,10 @@ def _profit_comparison_chart(scenario: pd.DataFrame) -> go.Figure:
         bargap=0.28,
         yaxis=dict(title="Прибыль ($)", tickprefix="$", gridcolor="#1E293B"),
         yaxis2=dict(
-            title="Прирост, %",
+            title=dict(
+                text="Прирост, %",
+                font=dict(color="#64748B"),
+            ),
             overlaying="y",
             side="right",
             ticksuffix="%",
@@ -143,7 +146,6 @@ def _profit_comparison_chart(scenario: pd.DataFrame) -> go.Figure:
             zeroline=True,
             zerolinecolor="#334155",
             tickfont=dict(color="#64748B", size=11),
-            titlefont=dict(color="#64748B"),
         ),
         legend=dict(
             bgcolor="rgba(0,0,0,0)",
