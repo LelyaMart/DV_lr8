@@ -303,9 +303,12 @@ def _satisfaction_heatmap(df: pd.DataFrame) -> go.Figure:
         zmin=3.0,
         zmax=4.8,
         colorbar=dict(
+            title=dict(
+                text="CSAT",
+                font=dict(color="#94A3B8"),
+            ),
             title="CSAT",
             tickfont=dict(color="#94A3B8"),
-            titlefont=dict(color="#94A3B8"),
         ),
         text=[[f"{v:.2f}" for v in row] for row in pivot.values],
         texttemplate="%{text}",
