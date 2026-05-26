@@ -222,7 +222,7 @@ def _yoy_bar(
         zeroline=True,
         zerolinecolor="#334155",
         tickfont=dict(color="#64748B", size=11),
-        titlefont=dict(color="#64748B"),),
+        ),
     )
     return fig
 
