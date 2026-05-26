@@ -195,13 +195,15 @@ def _bar_by_group(
             linecolor="rgba(0,0,0,0)",
         ),
         yaxis2=dict(
-            title="Прирост, %",
+            title=dict(
+                text="Прирост, %",
+                font=dict(color="#64748B"),
+            ),
             overlaying="y",
             side="right",
             showgrid=False,
             ticksuffix="%",
             tickfont=dict(color="#64748B", size=11),
-            titlefont=dict(color="#64748B"),
             zeroline=True,
             zerolinecolor="#334155",
             zerolinewidth=1,
